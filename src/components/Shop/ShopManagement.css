@@ -1,0 +1,197 @@
+.shop-management {
+  padding: 16px;
+  height: calc(100vh - 32px);
+  width: calc(100% - 32px);
+  background: #f8fafc;
+  display: flex;
+  flex-direction: column;
+}
+
+.management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.management-header h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-left: 16px;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 16px;
+}
+
+.add-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.1);
+}
+
+.container-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.table-container {
+  flex: 1;
+  overflow: auto;
+  padding: 0 24px;
+}
+
+.shop-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 16px 0;
+}
+
+.shop-table th,
+.shop-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.shop-table th {
+  color: #64748b;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.shop-table td {
+  font-size: 14px;
+  color: #334155;
+  vertical-align: middle;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item-thumbnail {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.category-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.category-badge.genshin-impact {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.category-badge.honkai-star-rail {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.category-badge.zenless-zone-zero {
+  background-color: #f3e8ff;
+  color: #6b21a8;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.badge.active {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.badge.inactive {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.badge:hover {
+  opacity: 0.8;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.edit-button {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+}
+
+.edit-button:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+  background: #f8fafc;
+}
+
+.delete-button {
+  background: white;
+  border: 1px solid #f87171;
+  color: #f87171;
+}
+
+.delete-button:hover {
+  background: #fef2f2;
+}

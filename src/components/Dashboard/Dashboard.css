@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.dashboard {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #1C2036;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sidebar {
+  width: 280px;
+  background: #1D3557;
+  color: white;
+  padding: 24px;
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.sidebar-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: none;
+  background: transparent;
+  color: #A8B3CF;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.nav-item.active {
+  background: #457B9D;
+  color: white;
+}
+
+.nav-item span {
+  font-weight: 500;
+}
+
+.user-profile {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+  margin-bottom: 20px;
+}
+
+.user-nickname {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.user-role {
+  display: block;
+  font-size: 14px;
+  color: #A8B3CF;
+  text-transform: uppercase;
+}
+
+.main-content {
+  margin-left: 328px;
+  min-height: 100vh;
+  width: calc(100vw - 328px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.welcome-text {
+  font-size: 72px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(28, 32, 54, 0.1);
+  font-weight: bold;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.sidebar-header {
+  padding: 0 0 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.noselect {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
